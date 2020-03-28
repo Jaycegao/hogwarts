@@ -6,7 +6,7 @@ created on 2019-6-2
 project:
 '''
 from python.calc import Calc
-
+import pytest
 
 class calc:
     def setup(self):
@@ -16,3 +16,7 @@ class calc:
 
     def test_div(self):
         assert self.calc.div(1, 2) == 0.5
+
+
+if __name__ == '__main__':
+    pytest.main()
