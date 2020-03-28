@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env demo
 # -*- coding:utf-8 -*-
 '''
 created on 2019-6-2
