@@ -16,3 +16,6 @@ class calc:
 
     def test_div(self):
         assert self.calc.div(1, 2) == 0.5
+
+    def test_jia(self):
+        pass
