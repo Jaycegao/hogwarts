@@ -15,12 +15,13 @@ import pytest
 
 
 class TestJS(Base):
-    @pytest.mark.skip
+
     def test_js(self):
         self.driver.get("https://www.baidu.com")
         self.driver.find_element(By.XPATH, '//*[@id="kw"]').send_keys("selenium")
         element = self.driver.execute_script("return document.getElementById('su')")
         element.click()
+        sleep(5)
         self.driver.execute_script("document.documentElement.scrollTop=100000")
         sleep(3)
         self.driver.find_element(By.XPATH, '//*[@id="page"]/a[10]').click()
@@ -30,10 +31,12 @@ class TestJS(Base):
         # ]:
         print(self.driver.execute_script('return document.title;return JSON.stringify(performance.timing)'))
 
+    @pytest.mark.skip
     def test_datetime(self):
         self.driver.get("https://www.12306.cn/index/")
         element_time = self.driver.execute_script(
             "a= document.getElementById('train_date');a.removeAttribute('readonly')")
+        sleep(5)
         self.driver.execute_script("document.getElementById('train_date').value='2020-05-01'")
         sleep(3)
         print(self.driver.execute_script("document.getElementById('train_date').value"))
