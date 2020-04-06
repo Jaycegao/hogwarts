@@ -50,6 +50,6 @@ class TestDemo1():
 
 
 if __name__ == "__main__":
-    # pytest.main("-x -v TestDemo")
+    # pytest.page("-x -v TestDemo")
     pytest.main(['-v', '-x', 'TestDemo'])
-    # pytest.main()
+    # pytest.page()

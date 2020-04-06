@@ -13,7 +13,7 @@ class TestRegister:
         self.main = Main()
 
     # def teardown(self):
-    #     self.main.quit()
+    #     self.page.quit()
 
     def test_register(self):
         assert self.main.goto_register().register()

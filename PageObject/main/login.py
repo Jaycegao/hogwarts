@@ -16,5 +16,5 @@ class Login(BasePage):
         pass
 
     def goto_register(self):
-        self.find(By.XPATH, '//*[@id="wework_admin.loginpage_wx_$"]/main/div[2]/a').click()
+        self.find(By.XPATH, '//*[@id="wework_admin.loginpage_wx_$"]/page/div[2]/a').click()
         return Register(self._driver)
