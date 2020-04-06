@@ -10,7 +10,7 @@ from selenium import webdriver
 from 企业微信实战2.page.index import Index
 
 
-class TestRegister():
+class TestRegister:
     def setup(self):
         # 初始化index
         self.index = Index()

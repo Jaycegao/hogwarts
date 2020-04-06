@@ -25,7 +25,7 @@ class TestScroll():
 
     def test_touch(self):
         self.driver.get("https://www.baidu.com/")
-        self.driver.find_element(By.XPATH, "//*[@id='kw']").send_keys("selenium")
+        self.driver.find_element(By.XPATH, "//*[@id='kw']").send_keys("selenium_3")
         ele = self.driver.find_element(By.XPATH, "//*[@id='su']")
         action = TouchActions(self.driver)
         action.tap(ele)

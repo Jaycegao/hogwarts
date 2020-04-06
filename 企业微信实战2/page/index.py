@@ -17,7 +17,7 @@ class Index(BasePage):
     def goto_register(self):
         self.driver.get("https://work.weixin.qq.com/")
         # 点击立即注册按钮
-        self.driver.find_element(By.XPATH, '//*[@id="tmp"]/div[1]/a[2]')
+        self.driver.find_element(By.XPATH, '//*[@id="tmp"]/div[1]/a[2]').click()
         # 进入到注册页
         return Register(self.driver)
 

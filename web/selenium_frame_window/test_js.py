@@ -18,7 +18,7 @@ class TestJS(Base):
 
     def test_js(self):
         self.driver.get("https://www.baidu.com")
-        self.driver.find_element(By.XPATH, '//*[@id="kw"]').send_keys("selenium")
+        self.driver.find_element(By.XPATH, '//*[@id="kw"]').send_keys("selenium_3")
         element = self.driver.execute_script("return document.getElementById('su')")
         element.click()
         sleep(5)
